@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cr.darkskyweatherapp.MainActivity">
+
+<TextView
+android:id="@+id/txtCoordinates"
+android:layout_marginTop="25dp"
+android:textSize="25dp"
+android:text="coordinates"
+android:gravity="center"
+android:layout_gravity="center_horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/place_display"
+android:layout_alignLeft="@+id/place_display"
+android:layout_alignStart="@+id/place_display" />
+
+<TextView
+android:id="@+id/place_display"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:text="place"
+android:textSize="25dp"
+android:layout_marginLeft="22dp"
+android:layout_marginStart="22dp"
+android:layout_marginTop="16dp"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/place_display"
+        android:layout_alignRight="@+id/place_display"
+        android:layout_centerVertical="true"
+        android:gravity="center"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
